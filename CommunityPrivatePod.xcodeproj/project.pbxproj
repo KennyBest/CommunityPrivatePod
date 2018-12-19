@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE45ABC501829E6B2963BF9 /* Pods_CommunityPrivatePod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9C6D4705A5D872DF88B30F5 /* Pods_CommunityPrivatePod.framework */; };
 		847DD5CF21C8C72E0020797B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5CE21C8C72E0020797B /* AppDelegate.swift */; };
 		847DD5D121C8C72E0020797B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5D021C8C72E0020797B /* ViewController.swift */; };
 		847DD5D421C8C72E0020797B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847DD5D221C8C72E0020797B /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3372D88731A4934C2C01EF81 /* Pods-CommunityPrivatePod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommunityPrivatePod.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod.release.xcconfig"; sourceTree = "<group>"; };
 		847DD5CB21C8C72E0020797B /* CommunityPrivatePod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommunityPrivatePod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847DD5CE21C8C72E0020797B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847DD5D021C8C72E0020797B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		847DD5DA21C8C72F0020797B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847DD5E121C8C7DD0020797B /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		847DD5E321C8C8010020797B /* HotspotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotViewController.swift; sourceTree = "<group>"; };
+		B6D17C64841FC7EBBF039132 /* Pods-CommunityPrivatePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommunityPrivatePod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod.debug.xcconfig"; sourceTree = "<group>"; };
+		C9C6D4705A5D872DF88B30F5 /* Pods_CommunityPrivatePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommunityPrivatePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CE45ABC501829E6B2963BF9 /* Pods_CommunityPrivatePod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4970EAC56F2E60B767989A82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9C6D4705A5D872DF88B30F5 /* Pods_CommunityPrivatePod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		730E49E143ECEAD215171ABD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6D17C64841FC7EBBF039132 /* Pods-CommunityPrivatePod.debug.xcconfig */,
+				3372D88731A4934C2C01EF81 /* Pods-CommunityPrivatePod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		847DD5C221C8C72D0020797B = {
 			isa = PBXGroup;
 			children = (
 				847DD5CD21C8C72E0020797B /* CommunityPrivatePod */,
 				847DD5CC21C8C72E0020797B /* Products */,
+				730E49E143ECEAD215171ABD /* Pods */,
+				4970EAC56F2E60B767989A82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847DD5DD21C8C72F0020797B /* Build configuration list for PBXNativeTarget "CommunityPrivatePod" */;
 			buildPhases = (
+				6FFA87C936B65D97875049B7 /* [CP] Check Pods Manifest.lock */,
 				847DD5C721C8C72E0020797B /* Sources */,
 				847DD5C821C8C72E0020797B /* Frameworks */,
 				847DD5C921C8C72E0020797B /* Resources */,
+				B9F321EE06294C83862F3165 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +169,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FFA87C936B65D97875049B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CommunityPrivatePod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F321EE06294C83862F3165 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NewPrivatePod/NewPrivatePod.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NewPrivatePod.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		847DD5C721C8C72E0020797B /* Sources */ = {
@@ -296,6 +369,7 @@
 		};
 		847DD5DE21C8C72F0020797B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6D17C64841FC7EBBF039132 /* Pods-CommunityPrivatePod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +388,7 @@
 		};
 		847DD5DF21C8C72F0020797B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3372D88731A4934C2C01EF81 /* Pods-CommunityPrivatePod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

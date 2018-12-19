@@ -1,0 +1,6 @@
+framework module Pods_CommunityPrivatePod {
+  umbrella header "Pods-CommunityPrivatePod-umbrella.h"
+
+  export *
+  module * { export * }
+}

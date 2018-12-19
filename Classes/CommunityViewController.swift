@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NewPrivatePod
 
 open class CommunityViewController: UIViewController {
 
@@ -43,6 +44,13 @@ open class CommunityViewController: UIViewController {
         hotspotButton.sizeToFit()
         hotspotButton.center = CGPoint(x: x, y: y + 60)
         view.addSubview(hotspotButton)
+        
+        let scoreButton = UIButton(type: .system)
+        scoreButton.setTitle("Enjoy Score", for: .normal)
+        scoreButton.addTarget(self, action: #selector(gotoScoreVC), for: .touchUpInside)
+        scoreButton.sizeToFit()
+        scoreButton.center = CGPoint(x: x, y: y + 80)
+        view.addSubview(scoreButton)
     }
     
     @objc func popToPre() {
@@ -54,6 +62,13 @@ open class CommunityViewController: UIViewController {
     @objc func gotoHotspotVC() {
         if let nav = navigationController {
             let vc = HotspotViewController()
+            nav.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @objc func gotoScoreVC() {
+        if let nav = navigationController {
+            let vc = ScoreViewController()
             nav.pushViewController(vc, animated: true)
         }
     }

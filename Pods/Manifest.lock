@@ -1,0 +1,16 @@
+PODS:
+  - NewPrivatePod (0.0.6)
+
+DEPENDENCIES:
+  - NewPrivatePod
+
+SPEC REPOS:
+  https://github.com/KennyBest/KYSpecRepo.git:
+    - NewPrivatePod
+
+SPEC CHECKSUMS:
+  NewPrivatePod: a36aef9b7fd97869222bccf8e12526beefe978d9
+
+PODFILE CHECKSUM: 84ed692be8eede6e30592cd3fdc4cb08de82db80
+
+COCOAPODS: 1.5.3
