@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import NewPrivatePod
+//import NewPrivatePod
 
 open class CommunityViewController: UIViewController {
 
@@ -67,10 +67,15 @@ open class CommunityViewController: UIViewController {
     }
     
     @objc func gotoScoreVC() {
-        if let nav = navigationController {
-            let vc = ScoreViewController()
-            nav.pushViewController(vc, animated: true)
-        }
+        let alert = UIAlertController(title: "Alert", message: "待接通", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        //        if let nav = navigationController {
+//            let vc = ScoreViewController()
+//            nav.pushViewController(vc, animated: true)
+//        }
     }
 
 }

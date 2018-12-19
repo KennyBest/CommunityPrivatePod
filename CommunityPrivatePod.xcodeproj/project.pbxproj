@@ -15,6 +15,7 @@
 		847DD5D921C8C72F0020797B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847DD5D721C8C72F0020797B /* LaunchScreen.storyboard */; };
 		847DD5E221C8C7DD0020797B /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5E121C8C7DD0020797B /* CommunityViewController.swift */; };
 		847DD5E421C8C8010020797B /* HotspotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5E321C8C8010020797B /* HotspotViewController.swift */; };
+		847DD5EB21C9DFA70020797B /* FindingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5EA21C9DFA70020797B /* FindingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		847DD5DA21C8C72F0020797B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		847DD5E121C8C7DD0020797B /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		847DD5E321C8C8010020797B /* HotspotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotViewController.swift; sourceTree = "<group>"; };
+		847DD5EA21C9DFA70020797B /* FindingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingsViewController.swift; sourceTree = "<group>"; };
 		B6D17C64841FC7EBBF039132 /* Pods-CommunityPrivatePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommunityPrivatePod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C6D4705A5D872DF88B30F5 /* Pods_CommunityPrivatePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommunityPrivatePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -96,11 +98,20 @@
 		847DD5E021C8C79F0020797B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				847DD5EC21C9DFE00020797B /* Resources */,
 				847DD5E121C8C7DD0020797B /* CommunityViewController.swift */,
 				847DD5E321C8C8010020797B /* HotspotViewController.swift */,
+				847DD5EA21C9DFA70020797B /* FindingsViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
+		};
+		847DD5EC21C9DFE00020797B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -222,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847DD5EB21C9DFA70020797B /* FindingsViewController.swift in Sources */,
 				847DD5D121C8C72E0020797B /* ViewController.swift in Sources */,
 				847DD5CF21C8C72E0020797B /* AppDelegate.swift in Sources */,
 				847DD5E421C8C8010020797B /* HotspotViewController.swift in Sources */,
