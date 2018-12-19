@@ -10,4 +10,5 @@ target 'CommunityPrivatePod' do
 
   # Pods for CommunityPrivatePod
   pod 'NewPrivatePod'
+  pod 'MediatorPrivatePod'
 end

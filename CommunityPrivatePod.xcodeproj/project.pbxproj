@@ -16,6 +16,7 @@
 		847DD5E221C8C7DD0020797B /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5E121C8C7DD0020797B /* CommunityViewController.swift */; };
 		847DD5E421C8C8010020797B /* HotspotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5E321C8C8010020797B /* HotspotViewController.swift */; };
 		847DD5EB21C9DFA70020797B /* FindingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD5EA21C9DFA70020797B /* FindingsViewController.swift */; };
+		847DD61321CA41240020797B /* MediatorCommunityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847DD61221CA41240020797B /* MediatorCommunityExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		847DD5E121C8C7DD0020797B /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		847DD5E321C8C8010020797B /* HotspotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotViewController.swift; sourceTree = "<group>"; };
 		847DD5EA21C9DFA70020797B /* FindingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingsViewController.swift; sourceTree = "<group>"; };
+		847DD61221CA41240020797B /* MediatorCommunityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatorCommunityExtension.swift; sourceTree = "<group>"; };
 		B6D17C64841FC7EBBF039132 /* Pods-CommunityPrivatePod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommunityPrivatePod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod.debug.xcconfig"; sourceTree = "<group>"; };
 		C9C6D4705A5D872DF88B30F5 /* Pods_CommunityPrivatePod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommunityPrivatePod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +104,7 @@
 				847DD5E121C8C7DD0020797B /* CommunityViewController.swift */,
 				847DD5E321C8C8010020797B /* HotspotViewController.swift */,
 				847DD5EA21C9DFA70020797B /* FindingsViewController.swift */,
+				847DD61221CA41240020797B /* MediatorCommunityExtension.swift */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
@@ -213,12 +216,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CommunityPrivatePod/Pods-CommunityPrivatePod-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MediatorPrivatePod/MediatorPrivatePod.framework",
 				"${BUILT_PRODUCTS_DIR}/NewPrivatePod/NewPrivatePod.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MediatorPrivatePod.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NewPrivatePod.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +242,7 @@
 				847DD5D121C8C72E0020797B /* ViewController.swift in Sources */,
 				847DD5CF21C8C72E0020797B /* AppDelegate.swift in Sources */,
 				847DD5E421C8C8010020797B /* HotspotViewController.swift in Sources */,
+				847DD61321CA41240020797B /* MediatorCommunityExtension.swift in Sources */,
 				847DD5E221C8C7DD0020797B /* CommunityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

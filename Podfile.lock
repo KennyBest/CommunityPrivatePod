@@ -1,16 +1,20 @@
 PODS:
+  - MediatorPrivatePod (0.0.2)
   - NewPrivatePod (0.0.6)
 
 DEPENDENCIES:
+  - MediatorPrivatePod
   - NewPrivatePod
 
 SPEC REPOS:
   https://github.com/KennyBest/KYSpecRepo.git:
+    - MediatorPrivatePod
     - NewPrivatePod
 
 SPEC CHECKSUMS:
+  MediatorPrivatePod: 114f6cbfa1b6af9a24386910c61533f864f321f3
   NewPrivatePod: a36aef9b7fd97869222bccf8e12526beefe978d9
 
-PODFILE CHECKSUM: 84ed692be8eede6e30592cd3fdc4cb08de82db80
+PODFILE CHECKSUM: bf87627172d27528a10c4543510206dd7feced43
 
 COCOAPODS: 1.5.3
